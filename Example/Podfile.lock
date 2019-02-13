@@ -1,0 +1,16 @@
+PODS:
+  - Ant (0.1.0)
+
+DEPENDENCIES:
+  - Ant (from `../`)
+
+EXTERNAL SOURCES:
+  Ant:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Ant: f5bbf8960eb53828b04af5710980cddac6ebd976
+
+PODFILE CHECKSUM: 71a35ce5d8fe43b74ac983e4178917f7b2d8de7b
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,6 @@
+framework module Pods_Ant_Tests {
+  umbrella header "Pods-Ant_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

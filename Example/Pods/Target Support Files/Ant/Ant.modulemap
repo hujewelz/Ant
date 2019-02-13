@@ -1,0 +1,6 @@
+framework module Ant {
+  umbrella header "Ant-umbrella.h"
+
+  export *
+  module * { export * }
+}
