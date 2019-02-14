@@ -7,8 +7,11 @@
 //
 
 #import "ATServiceManager.h"
+#include<pthread.h>
 
 static NSMutableDictionary<NSString *, NSString *> *classMap;
+
+static pthread_mutex_t lock;
 
 NS_INLINE void setupMapsIfNeeded()
 {
@@ -17,10 +20,14 @@ NS_INLINE void setupMapsIfNeeded()
 
 @implementation ATServiceManager
 
-+ (id)service:(Protocol *)serviceType {
-    NSParameterAssert(serviceType);
++ (void)initialize {
+    pthread_mutex_init(&lock, NULL);
+}
+
++ (id)serviceImplFromeService:(Protocol *)service {
+    NSParameterAssert(service);
     setupMapsIfNeeded();
-    NSString *prto = NSStringFromProtocol(serviceType);
+    NSString *prto = NSStringFromProtocol(service);
     NSString *ser = classMap[prto];
     if (!ser) {
         return nil;
@@ -51,7 +58,9 @@ NS_INLINE void setupMapsIfNeeded()
     }
     NSString *ser = NSStringFromClass(service);
     NSString *prto = NSStringFromProtocol(serviceType);
+    pthread_mutex_lock(&lock);
     classMap[prto] = ser;
+    pthread_mutex_unlock(&lock);
 }
 
 @end

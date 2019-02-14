@@ -4,10 +4,12 @@ platform :ios, '8.0'
 
 target 'Ant_Example' do
   pod 'Ant', :path => '../'
+  
+  target 'Module1' do
+      inherit! :search_paths
+  end
 
   target 'Ant_Tests' do
     inherit! :search_paths
-
-    
   end
 end

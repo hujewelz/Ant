@@ -41,12 +41,14 @@
     [ATModuleManager registerModuleFromPlistFile:plist];
 }
 
-+ (id)service:(Protocol *)serviceType {
-    return [ATServiceManager service:serviceType];
++ (id)serviceImplFromeService:(Protocol *)service {
+    return [ATServiceManager serviceImplFromeService:service];
 }
 
 + (void)registerService:(Class)service forServiceType:(Protocol *)serviceType {
     [ATServiceManager registerService:service forServiceType:serviceType];
 }
+
+
 
 @end

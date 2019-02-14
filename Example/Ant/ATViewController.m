@@ -7,6 +7,8 @@
 //
 
 #import "ATViewController.h"
+#import <Ant/Ant.h>
+#import "PublicServices.h"
 
 @interface ATViewController ()
 
@@ -24,6 +26,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)buttonClicked:(id)sender {
+    id <TestService> s = [Ant serviceImplFromeService:@protocol(TestService)];
+    [s test];
 }
 
 @end
