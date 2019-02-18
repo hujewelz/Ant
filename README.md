@@ -1,6 +1,6 @@
 # Ant
 
-[![CI Status](https://img.shields.io/travis/huluobo/Ant.svg?style=flat)](https://travis-ci.org/huluobo/Ant)
+[![CI Status](https://img.shields.io/travis/hujewelz/Ant.svg?style=flat)](https://travis-ci.org/hujewelz/Ant)
 [![Version](https://img.shields.io/cocoapods/v/Ant.svg?style=flat)](https://cocoapods.org/pods/Ant)
 [![License](https://img.shields.io/cocoapods/l/Ant.svg?style=flat)](https://cocoapods.org/pods/Ant)
 [![Platform](https://img.shields.io/cocoapods/p/Ant.svg?style=flat)](https://cocoapods.org/pods/Ant)
