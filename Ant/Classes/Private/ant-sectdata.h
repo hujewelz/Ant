@@ -30,6 +30,10 @@ typedef struct serviceinfo_t serviceinfo_t;
 
 typedef char * module_t;
 
-extern module_t *_getRegisteredModules(const struct mach_header_64 *mhp, size_t *outCount);
-extern serviceinfo_t *_getRegisteredServiceInfoList(const struct mach_header_64 *mhp, size_t *outCount);
+extern module_t *_getRegisteredModules(const struct mach_header *mhp, size_t *outCount);
+
+
+
+extern serviceinfo_t *_getRegisteredServiceInfoList(const struct mach_header *mhp, size_t *outCount);
+
 

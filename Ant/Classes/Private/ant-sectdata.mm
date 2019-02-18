@@ -38,16 +38,23 @@ void ant_init() {
 }
 
 template <typename T>
-T* getDataSection(const struct mach_header_64 *mhp, const char *sectname, size_t *outCount)
+T* getDataSection(const struct mach_header *mhp, const char *sectname, size_t *outCount)
 {
-    unsigned long byteCount = 0;
-    T* data = (T*)getsectiondata(mhp, "__DATA", sectname, &byteCount);
+    
+#ifndef __LP64__
+    uint32_t byteCount = 0;
+    T* data = (T*)getsectdatafromheader(mhp, "__DATA", sectname, &byteCount);
     if (outCount) *outCount = byteCount / sizeof(T);
+#else
+    unsigned long byteCount = 0;
+    T* data = (T*)getsectiondata((struct mach_header_64 *)mhp, "__DATA", sectname, &byteCount);
+    if (outCount) *outCount = byteCount / sizeof(T);
+#endif
     return data;
 }
 
 #define GETSECT(name, type, sectname)                            \
-type *name(const struct mach_header_64 *mhp, size_t *outCount) { \
+type *name(const struct mach_header *mhp, size_t *outCount) { \
     return getDataSection<type>(mhp, sectname, outCount);        \
 }
 
@@ -59,8 +66,7 @@ GETSECT(_getRegisteredServiceInfoList, serviceinfo_t, "__ant_services")
 
 static void add_module(const struct mach_header *mhp, intptr_t vmaddr_slide) {
     size_t count = 0;
-    struct mach_header_64 *_mhp = (struct mach_header_64 *)mhp;
-    module_t *ms = _getRegisteredModules(_mhp, &count);
+    module_t *ms = _getRegisteredModules(mhp, &count);
     for (size_t i=0; i<count; i++) {
         module_t m = ms[i];
 //        [ATModuleManager registerModuleWithName:ANT_STRING_FROM_CString(m)];
@@ -70,8 +76,7 @@ static void add_module(const struct mach_header *mhp, intptr_t vmaddr_slide) {
 
 static void add_services(const struct mach_header *mhp, intptr_t vmaddr_slide) {
     size_t count = 0;
-    struct mach_header_64 *_mhp = (struct mach_header_64 *)mhp;
-    serviceinfo_t *infos = _getRegisteredServiceInfoList(_mhp, &count);
+    serviceinfo_t *infos = _getRegisteredServiceInfoList(mhp, &count);
     for (size_t i=0; i<count; i++) {
         serviceinfo_t info = infos[i];
         [ATServiceManager registerServiceName:ANT_STRING_FROM_CString(info.cls) forServiceType:ANT_STRING_FROM_CString(info.prt)];
