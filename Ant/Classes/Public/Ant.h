@@ -40,6 +40,8 @@
 /// Register a module with Module name.
 + (void)registerModuleWithName:(nonnull NSString *)moduleName;
 
+/// Register all modules with plist file.
+/// @param plist the full path of the plist file.
 + (void)registerModulesFromPlistFile:(nullable NSString *)plist;
 
 + (void)registerService:(nonnull Class)service forProtocol:(nonnull Protocol *)protocol;
