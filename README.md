@@ -57,7 +57,7 @@ return YES;
 
 你可以在 Info.plist 中添加 Modules：
 
-![Info.plist](infoplist.png)
+![Info.plist](https://github.com/hujewelz/Ant/blob/master/medias/infoplist.png)
 
 可以在调用 `registerModulesFromPlistFile` 并传入 `nil` ，Ant 会默认加载 Info.plist 中的 Modules：
 ```objc
@@ -84,7 +84,7 @@ Ant 使用协议注册的方式（Protocol-Class）来实现组件通信。
 Protocol-Class 方案就是通过 protocol 定义服务接口，服务提供方通过实现该接口来提供接口定义的服务。具体实现就是把 protocol 和 class 做一个映射，同时在内存中保存一张映射表，使用的时候，就通过 protocol 找到对应的 class 来获取需要的服务。
 
 **示例图：**
-![protocol-class使用示例图](protocol-class.jpg)
+![protocol-class使用示例图](https://github.com/hujewelz/Ant/blob/master/medias/protocol-class.jpg)
 **示例代码：**
 ```objc
 // TestService.h (定义服务)
