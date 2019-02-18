@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <PublicServices/PublicServices.h>
 
-@interface TestServiceImpl : NSObject <TestService>
+@interface TestServiceImpl : NSObject
 
 @end

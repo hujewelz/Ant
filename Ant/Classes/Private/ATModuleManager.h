@@ -33,8 +33,10 @@
 + (void)registerModule:(nullable Class)moduleClass;
 
 /// Register a module with Module name.
-+ (void)registerModuleName:(nonnull NSString *)moduleName;
++ (void)registerModuleWithName:(nonnull NSString *)moduleName;
 
-+ (void)registerModuleFromPlistFile:(nullable NSString *)plist;
++ (void)registerModulesFromPlistFile:(nullable NSString *)plist;
+
++ (void)registerModuleWithNameLazily:(nonnull NSString *)moduleName;
 
 @end

@@ -18,6 +18,6 @@ FOUNDATION_EXPORT const unsigned char PublicServicesVersionString[];
 
 @protocol TestService <NSObject>
 
-- (void)test;
+- (void)service1;
 
 @end

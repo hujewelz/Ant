@@ -9,14 +9,14 @@
 Pod::Spec.new do |s|
   s.name             = 'Ant'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Ant.'
+  s.summary          = 'Ant is a modular programming tool for iOS developer.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    Ant is a modular programming tool for iOS developer.
+    Developer can use Ant to make iOS programming easier when deal with module.
                        DESC
 
   s.homepage         = 'https://github.com/hujewelz/Ant'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'huluobo' => 'hujewelz@163.com' }
   s.source           = { :git => 'https://github.com/hujewelz/Ant.git', :tag => s.version.to_s }

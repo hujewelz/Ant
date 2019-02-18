@@ -20,8 +20,10 @@
 		8204E7E21868186FB65760EB27603B68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		892D29EF6FE165C07E084A0B13F5E820 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		9AA5570A8F49728CD3B6A7277C8A3739 /* Ant.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDBBBAF4C42CD51A050A01FFA35D795 /* Ant.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A953770B841A264228FA58D4F482BD95 /* ATModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E56699516C6261AE578BF34ADFF43C4 /* ATModuleManager.m */; };
+		A953770B841A264228FA58D4F482BD95 /* ATModuleManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6E56699516C6261AE578BF34ADFF43C4 /* ATModuleManager.mm */; };
 		AF59DDE36223D280A89EE3C547FB4CB8 /* ATExport.h in Headers */ = {isa = PBXBuildFile; fileRef = 7013C88A087192055F9F9B64A8753027 /* ATExport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C22EDEDC221A4B0D006ECF60 /* cache.h in Headers */ = {isa = PBXBuildFile; fileRef = C22EDEDA221A4B0D006ECF60 /* cache.h */; };
+		C22EDEDD221A4B0D006ECF60 /* cache.mm in Sources */ = {isa = PBXBuildFile; fileRef = C22EDEDB221A4B0D006ECF60 /* cache.mm */; };
 		C25C3D5C4FF1F0D2F604D9EDC64DC9D7 /* Pods-Module1-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49A4D6308F23A5565409909EE2C31939 /* Pods-Module1-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CFFD8227134908135F712BF73588704A /* Pods-Ant_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE245D79A3682AE69BF801EB851A594 /* Pods-Ant_Tests-dummy.m */; };
 		D124153362B144B0935D40B5E40725D4 /* ant-sectdata.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8FA5338DAE8A4C623AE7C30E502AA8BE /* ant-sectdata.mm */; };
@@ -84,7 +86,7 @@
 		66874545734E137E6C51F1DEA8ACD009 /* Pods-Module1-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Module1-resources.sh"; sourceTree = "<group>"; };
 		6B71C0C0E5063DEC7C870E1FEB03893B /* Pods-Module1.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Module1.modulemap"; sourceTree = "<group>"; };
 		6C517580D56861B8AB12DA4D87622E89 /* Pods-Ant_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ant_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6E56699516C6261AE578BF34ADFF43C4 /* ATModuleManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ATModuleManager.m; sourceTree = "<group>"; };
+		6E56699516C6261AE578BF34ADFF43C4 /* ATModuleManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = ATModuleManager.mm; sourceTree = "<group>"; };
 		7013C88A087192055F9F9B64A8753027 /* ATExport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ATExport.h; sourceTree = "<group>"; };
 		705899705F7EA8DEAD78C194A30783A8 /* ATServiceManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ATServiceManager.m; sourceTree = "<group>"; };
 		786197BFD6A9C9F35C6EE375493A662B /* Ant-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Ant-prefix.pch"; sourceTree = "<group>"; };
@@ -103,6 +105,8 @@
 		B01524D776CB262FC7FB69A7485863FA /* Pods_Module1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Module1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B128CA23270E4051A6173E23CBECB85C /* Ant.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Ant.xcconfig; sourceTree = "<group>"; };
 		BA6B5E46F2A23D7915E4C9C0761835F6 /* ATServiceProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ATServiceProtocol.h; sourceTree = "<group>"; };
+		C22EDEDA221A4B0D006ECF60 /* cache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cache.h; sourceTree = "<group>"; };
+		C22EDEDB221A4B0D006ECF60 /* cache.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = cache.mm; sourceTree = "<group>"; };
 		C74946366F3B8E939FB10317B21B0BF5 /* Pods-Ant_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ant_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		C8C15766F8953ECE96013CB4EF211C7A /* Pods-Ant_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ant_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C9050A3816DDA3207D4013C91D9EEC0F /* Pods-Ant_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ant_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -320,9 +324,11 @@
 				0EE60A224F5D6729B1CE3A2D416EFEAC /* ant-sectdata.h */,
 				8FA5338DAE8A4C623AE7C30E502AA8BE /* ant-sectdata.mm */,
 				EE2CC88D50A6E4E61B73326F9A04759F /* ATModuleManager.h */,
-				6E56699516C6261AE578BF34ADFF43C4 /* ATModuleManager.m */,
+				6E56699516C6261AE578BF34ADFF43C4 /* ATModuleManager.mm */,
 				3D15692300A5D75DFAB406661BDA8720 /* ATServiceManager.h */,
 				705899705F7EA8DEAD78C194A30783A8 /* ATServiceManager.m */,
+				C22EDEDA221A4B0D006ECF60 /* cache.h */,
+				C22EDEDB221A4B0D006ECF60 /* cache.mm */,
 			);
 			name = Private;
 			path = Ant/Classes/Private;
@@ -368,6 +374,7 @@
 				08613F9CFFC582B9EB1E01CA50DB2427 /* ATModuleProtocol.h in Headers */,
 				FEB6545DA1D7955266F6DAB6C79BADFA /* ATServiceManager.h in Headers */,
 				DC16B7593B2D9860846C14B661BAFC00 /* ATServiceProtocol.h in Headers */,
+				C22EDEDC221A4B0D006ECF60 /* cache.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,8 +549,9 @@
 				D124153362B144B0935D40B5E40725D4 /* ant-sectdata.mm in Sources */,
 				E9160CDE26A25861E7C3956AC09EC760 /* Ant.m in Sources */,
 				57D7B0E0E47B098BEDCA87994588645A /* ATContext.m in Sources */,
-				A953770B841A264228FA58D4F482BD95 /* ATModuleManager.m in Sources */,
+				A953770B841A264228FA58D4F482BD95 /* ATModuleManager.mm in Sources */,
 				3C84E3C607E12AAD316F17FBA17BAF3D /* ATServiceManager.m in Sources */,
+				C22EDEDD221A4B0D006ECF60 /* cache.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

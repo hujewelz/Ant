@@ -24,6 +24,7 @@
 //  THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
+#import "ATExport.h"
 
 @protocol ATServiceProtocol <NSObject>
 

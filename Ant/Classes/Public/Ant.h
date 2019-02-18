@@ -38,13 +38,13 @@
 + (void)registerModule:(nonnull Class)moduleClass;
 
 /// Register a module with Module name.
-+ (void)registerModuleName:(nonnull NSString *)moduleName;
++ (void)registerModuleWithName:(nonnull NSString *)moduleName;
 
-+ (void)registerModuleFromPlistFile:(nullable NSString *)plist;
++ (void)registerModulesFromPlistFile:(nullable NSString *)plist;
 
-+ (void)registerService:(nonnull Class)service forServiceType:(nonnull Protocol *)serviceType;
++ (void)registerService:(nonnull Class)service forProtocol:(nonnull Protocol *)protocol;
 
-+ (id)serviceImplFromeService:(nonnull Protocol *)service;
++ (id)serviceImplFromProtocol:(nonnull Protocol *)protocol;
 
 
 @end

@@ -27,10 +27,10 @@
 
 @interface ATServiceManager : NSObject
 
-+ (void)registerService:(nullable Class)service forServiceType:(nullable Protocol *)serviceType;
++ (void)registerService:(nullable Class)service forProtocol:(nullable Protocol *)protocol;
 
 + (void)registerServiceName:(nonnull NSString*)service forServiceType:(nonnull NSString *)serviceType;
 
-+ (nullable id)serviceImplFromeService:(nonnull Protocol *)service;
++ (nullable id)serviceImplFromProtocol:(nonnull Protocol *)protocol;
 
 @end

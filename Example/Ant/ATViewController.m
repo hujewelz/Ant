@@ -10,15 +10,20 @@
 #import <Ant/Ant.h>
 #import "PublicServices.h"
 
-@interface ATViewController ()
+@interface ATViewController () {
+    dispatch_queue_t _ioQueue;
+}
 
 @end
 
 @implementation ATViewController
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -29,8 +34,8 @@
 }
 
 - (IBAction)buttonClicked:(id)sender {
-    id <TestService> s = [Ant serviceImplFromeService:@protocol(TestService)];
-    [s test];
+    id <TestService> obj = [Ant serviceImplFromProtocol:@protocol(TestService)];
+    [obj service1];
 }
 
 @end

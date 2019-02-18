@@ -8,11 +8,16 @@
 
 #import "TestServiceImpl.h"
 #import <Ant/Ant.h>
+#import <PublicServices/PublicServices.h>
 
 ANT_REGISTER_SERVICE(TestServiceImpl, TestService)
+ANT_REGISTER_SERVICE(TestServiceImpl2, TestService2)
+ANT_REGISTER_SERVICE(TestServiceImpl3, TestService3)
+@interface TestServiceImpl() <TestService> @end
+
 @implementation TestServiceImpl
 
-- (void)test {
+- (void)service1 {
     NSLog(@"Service test from Impl");
 }
 

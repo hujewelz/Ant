@@ -24,6 +24,7 @@
 //  THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
+#import "ATExport.h"
 
 @protocol ATModuleProtocol <UIApplicationDelegate>
 

@@ -78,7 +78,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1207B10BE60E607D8FFFC8C3 /* Ant.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Ant.podspec; path = ../Ant.podspec; sourceTree = "<group>"; };
+		1207B10BE60E607D8FFFC8C3 /* Ant.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Ant.podspec; path = ../Ant.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		18BC3311AFD35B43E8A9B557 /* Pods-Ant_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ant_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ant_Tests/Pods-Ant_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2E5D06BFE71659C8945FB7D5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3B3DCCF8B46B794B13B8609C /* Pods-Module1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Module1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Module1/Pods-Module1.debug.xcconfig"; sourceTree = "<group>"; };
