@@ -1,5 +1,3 @@
-# Ant
-
 ![](medias/logo.png)
 
 [![CI Status](https://img.shields.io/travis/hujewelz/Ant.svg?style=flat)](https://travis-ci.org/hujewelz/Ant)
